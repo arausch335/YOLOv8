@@ -1,0 +1,10 @@
+/data/original_annotations/old/
+/data/original_annotations/instances_default.json
+/obsolete/
+/runs/annotate/
+/runs/predict/
+/runs/train/
+/weights/sam_b.pt
+/weights/yolov8m-seg.pt
+/weights/yolov8n.pt
+/weights/yolov10m.pt

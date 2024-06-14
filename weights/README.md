@@ -1,0 +1,1 @@
+Download the weights from Ultralytics-YOLOv8 that you would like to use, yolov8m-seg.pt is recommended

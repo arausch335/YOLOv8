@@ -1,0 +1,41 @@
+path: C:\Users\Alexander\PycharmProjects\YOLOv10test1\data\yolo_dataset
+train: C:\Users\Alexander\PycharmProjects\YOLOv10test1\data\yolo_dataset\train\images
+val: C:\Users\Alexander\PycharmProjects\YOLOv10test1\data\yolo_dataset\val\images
+test: C:\Users\Alexander\PycharmProjects\YOLOv10test1\data\yolo_dataset\test\images
+
+# Classes
+names:
+  - Right Ventricle
+  - Left Ventricle
+  - LAD
+  - Pulmonary Artery
+  - Aorta
+  - Heart
+  - Right Atrium
+nc: 7
+
+Training Parameters:
+  name: 'heart3'
+  epochs: 20
+  verbose: True
+  optimizer: 'SGD'
+  lr0: 0.01
+  lrf: 0.1
+  plots: True
+
+Predict Parameters:
+  conf: 0.85
+  max_det: 6
+  half: False
+  save: True
+
+Dataset Parameters:
+  LoadInitialAnnotations:
+    Images:
+      keep: '1-15, 31-45'
+  MergeAutoAnnotations:
+    Categories:
+      keep:
+        - Pulmonary Artery
+        - Aorta
+        - Right Atrium
